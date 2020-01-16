@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Biz_SmartLog::smartlog" title="Smart Log" translate="title" module="Biz_SmartLog" sortOrder="60" parent="Magento_Backend::system" resource="Biz_SmartLog::smartlog"/>
+        <add id="Biz_SmartLog::smartlog_logs" title="Logs" translate="title" module="Biz_SmartLog" sortOrder="10" parent="Biz_SmartLog::smartlog" action="biz_smartlog/log/index" resource="Biz_SmartLog::smartlog"/>
+    </menu>
+</config>

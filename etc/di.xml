@@ -1,0 +1,19 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="biz_smartlog_log_listing_data_source" xsi:type="string">Biz\SmartLog\Model\ResourceModel\Log\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Mageplaza\HelloWorld\Model\ResourceModel\Post\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">smartlog_registry</argument>
+            <argument name="resourceModel" xsi:type="string">Biz\SmartLog\Model\ResourceModel\Log</argument>
+        </arguments>
+    </virtualType>
+
+<!--    <preference for="Monolog\Logger" type="Biz\SmartLog\Model\LogPreference" />-->
+<!--    <preference for="MercadoPago\Core\Logger\Logger" type="Biz\SmartLog\Model\LogPreference" />-->
+    <preference for="Psr\Log\LoggerInterface" type="Biz\SmartLog\Model\LogPreference" />
+</config>

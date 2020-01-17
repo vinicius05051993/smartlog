@@ -6,7 +6,7 @@
             </argument>
         </arguments>
     </type>
-    <virtualType name="Mageplaza\HelloWorld\Model\ResourceModel\Post\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+    <virtualType name="Biz\SmartLog\Model\ResourceModel\Log\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
         <arguments>
             <argument name="mainTable" xsi:type="string">smartlog_registry</argument>
             <argument name="resourceModel" xsi:type="string">Biz\SmartLog\Model\ResourceModel\Log</argument>
